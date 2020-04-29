@@ -1,0 +1,19 @@
+pipeline{
+    
+    agent any
+    stages{
+        
+        stage('Compile stage'){
+            
+            steps{
+            
+            bat 'mvn -f jenkinsCICD/pom.xml clean install'
+            }
+
+            }
+
+        }
+
+    
+
+}
